@@ -18,7 +18,7 @@
         <div class="px-5 mx-3">
             <h1 id="intro" class="mb-5"></h1>
         </div>
-        <div>
+        <div data-aos="fade-in" data-aos-duration="3000">
             <img style="margin-top: 100px; text-align: center; height: 100px;" src="img/noun-scroll-down-1076474.png" alt="">
         </div>
     </div>
@@ -40,8 +40,8 @@
     var x = 0;
     var txt = 'Hi Hon!'
     var txt1 = 'Will you be my Valentine?';
-    var speed = 50;
-    var speed1 = 500;
+    var speed = 100;
+    var speed1 = 100;
 
     typeHello();
     
@@ -51,9 +51,9 @@
         i++;
         setTimeout(typeHello, speed);
         }
-        typeIntro();
-    }
+    }typeIntro();
 
+    
     function typeIntro() {
         if (x < txt1.length) {
         document.getElementById("intro").innerHTML += txt1.charAt(x);
